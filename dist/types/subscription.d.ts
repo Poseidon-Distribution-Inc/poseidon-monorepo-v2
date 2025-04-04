@@ -1,10 +1,6 @@
 export interface ISubscriptionSchema {
     subscriberId: string;
     postId: string;
-    ratingId: string;
-    paymentId: string;
-    feedbackId: string;
-    commentId?: string;
     isActive: boolean;
 }
 export interface ISubscription extends ISubscriptionSchema {
