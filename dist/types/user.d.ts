@@ -1,6 +1,8 @@
 type AuthProvider = "local" | "google";
+type UserRole = "admin" | "super_admin" | "subscriber" | "service_provider";
 interface IBaseUserSchema {
     email: string;
+    role: UserRole;
     authProvider: AuthProvider;
 }
 export interface ILocalUserSchema extends IBaseUserSchema {
