@@ -5,6 +5,7 @@ export interface IFeedbackSchema {
     title: string;
     feedback: string;
     reference: referenceEnum;
+    referenceId: string;
     status: statusEnum;
     isActive: boolean;
 }

@@ -1,9 +1,9 @@
-export type paymentStatus = "paid" | "request refunded" | "refunded";
+export type paymentStatus = "paid" | "request_refund" | "refunded";
 export interface IPaymentSchema {
-    amount: number;
     payor: string;
     payee: string;
     postId: string;
+    subscriptionId: string;
     status: paymentStatus;
     isActive: boolean;
 }
