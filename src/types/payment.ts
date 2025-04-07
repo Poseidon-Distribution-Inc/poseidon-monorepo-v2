@@ -1,4 +1,4 @@
-export type paymentStatus = "paid" | "refund" | "refunded";
+export type paymentStatus = "paid" | "request_refund" | "refunded";
 
 export interface IPaymentSchema {
     payor: string;
