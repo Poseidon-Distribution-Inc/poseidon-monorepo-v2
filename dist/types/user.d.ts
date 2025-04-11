@@ -2,7 +2,9 @@ type AuthProvider = "local" | "google";
 type UserRole = "admin" | "super_admin" | "subscriber" | "service_provider";
 interface IBaseUserSchema {
     id: string;
+    name: string;
     email: string;
+    address?: string;
     phoneNumber?: string;
     role: UserRole;
     authProvider: AuthProvider;
