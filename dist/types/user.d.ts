@@ -25,15 +25,25 @@ export interface IGoogleUser extends IGoogleUserSchema {
 export type IUserSchema = ILocalUserSchema | IGoogleUserSchema;
 export type IUser = ILocalUser | IGoogleUser;
 export interface APIUserLoginRequest {
-    message: string;
-    data: IUser;
+    email: string;
+    password: string;
 }
 interface APIGetUserErrorResponse {
     error: string;
 }
 interface APIGetUserSuccessResponse {
     message: string;
-    data: IUser | IUser[];
+    data?: IUser | IUser[] | string;
+}
+export interface APIGetUserRequest {
+    role?: string;
+    email?: string;
+    userId?: string;
+    status?: string;
+    isActive?: boolean;
+    token?: string;
+    currentPassword?: string;
+    newPassword?: string;
 }
 export type APIUserResponse = APIGetUserSuccessResponse | APIGetUserErrorResponse;
 export {};
