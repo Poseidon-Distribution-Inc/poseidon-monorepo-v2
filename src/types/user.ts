@@ -42,7 +42,6 @@ export interface APIGetUserRequest {
     role?: string;
     email?: string;
     userId?: string;
-    role?: string;
     status?: string;
     isActive?: boolean;
     token?: string;
