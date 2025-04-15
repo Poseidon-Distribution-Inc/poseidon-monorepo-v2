@@ -6,7 +6,6 @@ interface IBaseUserSchema {
     email: string;
     address?: string;
     phoneNumber?: string;
-    role: UserRole;
     authProvider: AuthProvider;
     createdAt: Date;
     updatedAt: Date;
@@ -28,14 +27,16 @@ export interface APIUserLoginRequest {
     email: string;
     password: string;
 }
-
 interface APIGetUserErrorResponse {
     error: string;
 }
-
 interface APIGetUserSuccessResponse {
     message: string;
-    data?: IUser | IUser[] | string;
+    data?: IUser | IUser[];
+}
+interface APIUserLoginSuccessResponse {
+    message: string;
+    token: string;
 }
 
 export interface APIGetUserRequest {
@@ -49,6 +50,9 @@ export interface APIGetUserRequest {
     newPassword?: string;
 }
 
+export type APILoginResponse =
+    | APIUserLoginSuccessResponse
+    | APIGetUserErrorResponse;
 export type APIUserResponse =
     | APIGetUserSuccessResponse
     | APIGetUserErrorResponse;
