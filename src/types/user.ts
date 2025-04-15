@@ -1,11 +1,11 @@
 type AuthProvider = "local" | "google";
-type UserRole = "admin" | "super_admin" | "subscriber" | "service_provider";
 interface IBaseUserSchema {
     id: string;
     name: string;
     email: string;
     address?: string;
     phoneNumber?: string;
+    role?: string;
     authProvider: AuthProvider;
     createdAt: Date;
     updatedAt: Date;
@@ -38,7 +38,6 @@ interface APIUserLoginSuccessResponse {
     message: string;
     token: string;
 }
-
 export interface APIGetUserRequest {
     role?: string;
     email?: string;
@@ -49,7 +48,6 @@ export interface APIGetUserRequest {
     currentPassword?: string;
     newPassword?: string;
 }
-
 export type APILoginResponse =
     | APIUserLoginSuccessResponse
     | APIGetUserErrorResponse;
