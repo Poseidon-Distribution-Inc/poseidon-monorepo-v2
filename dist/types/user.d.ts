@@ -38,6 +38,7 @@ interface APIGetUserSuccessResponse {
 }
 interface APIUserLoginSuccessResponse {
     message: string;
+    data: IUser;
     token: string;
 }
 export interface APIGetUserRequest {
