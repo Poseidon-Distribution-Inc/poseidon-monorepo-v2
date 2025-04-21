@@ -1,18 +1,21 @@
 export interface IPostSchema {
+    id: string;
     posterId: string;
-    title: string;
-    description: string;
-    price: number;
-    photoUrl: string[];
-    quantity: number;
-    durationStart: Date;
-    durationEnd: Date;
+    createdAt: Date;
+    updatedAt: Date;
     isActive: boolean;
 }
 export interface IPost extends IPostSchema {
-    id: string;
-    createdAt: Date;
-    updatedAt: Date;
+    name: string;
+    email: string;
+    contactNum: string;
+    pickUpLocation: string;
+    dropOffLocation: string;
+    pickUpZipCode: string;
+    dropOffZipCode: string;
+    size: string;
+    type: string;
+    message?: string;
 }
 interface APIPostErrorResponse {
     error: string;
