@@ -1,5 +1,7 @@
 export interface IPostSchema {
     id: string;
+    orderNum: string;
+    referenceNum: string;
     posterId: string;
     createdAt: Date;
     updatedAt: Date;
@@ -15,7 +17,8 @@ export interface IPost extends IPostSchema {
     dropOffZipCode: string;
     size: string;
     type: string;
-    message?: string;
+    message: string;
+    status: string;
 }
 interface APIPostErrorResponse {
     error: string;
