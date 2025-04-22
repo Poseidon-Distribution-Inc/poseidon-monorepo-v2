@@ -8,16 +8,16 @@ export interface IPostSchema {
     isActive: boolean;
 }
 export interface IPost extends IPostSchema {
-    name: string;
-    email: string;
-    contactNum: string;
-    pickUpLocation: string;
-    dropOffLocation: string;
-    pickUpZipCode: string;
-    dropOffZipCode: string;
     size: string;
-    type: string;
-    message: string;
+    commodity: string;
+    weight: string;
+    truckType: string;
+    packaging: string;
+    deliveredDate: string;
+    pickupLocation: string;
+    dropOffLocation: string;
+    receiverName: string;
+    receiverContact: string;
     status: string;
 }
 interface APIPostErrorResponse {
