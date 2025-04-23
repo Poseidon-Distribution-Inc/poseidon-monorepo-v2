@@ -1,7 +1,7 @@
 export interface IQuoteSchema {
     price: number;
     currency: string;
-    quoterId: string;
+    authorId: string;
     postId: string;
     isActive: boolean;
     isAccepted: boolean;
