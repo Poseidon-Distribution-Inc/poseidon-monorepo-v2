@@ -13,11 +13,15 @@ export interface IPost extends IPostSchema {
     weight: string;
     truckType: string;
     packaging: string;
+    pickupDate:string;
     deliveredDate: string;
     pickupLocation: string;
     dropOffLocation: string;
     receiverName: string;
     receiverContact: string;
+    senderName:string;
+    companyName:string;
+    senderContact: string;
     status: string;
 }
 interface APIPostErrorResponse {
