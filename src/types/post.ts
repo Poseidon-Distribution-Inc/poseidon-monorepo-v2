@@ -1,5 +1,5 @@
 export interface IPostSchema {
-    id: string;
+    _id: string;
     orderNum: string;
     referenceNum: string;
     posterId: string;
@@ -13,14 +13,14 @@ export interface IPost extends IPostSchema {
     weight: string;
     truckType: string;
     packaging: string;
-    pickupDate:string;
+    pickupDate: string;
     deliveredDate: string;
     pickupLocation: string;
     dropOffLocation: string;
     receiverName: string;
     receiverContact: string;
-    senderName:string;
-    companyName:string;
+    senderName: string;
+    companyName: string;
     senderContact: string;
     status: string;
 }

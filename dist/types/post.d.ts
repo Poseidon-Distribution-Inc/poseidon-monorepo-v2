@@ -1,5 +1,5 @@
 export interface IPostSchema {
-    id: string;
+    _id: string;
     orderNum: string;
     referenceNum: string;
     posterId: string;
