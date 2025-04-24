@@ -9,3 +9,4 @@ export * from "./types/rating";
 export * from "./types/shoppingCart";
 export * from "./types/subscription";
 export * from "./types/quote";
+export * from "./types/googleDrive";
