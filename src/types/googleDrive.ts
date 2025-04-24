@@ -1,12 +1,12 @@
-interface GoogleDriveErrorResponse {
+interface IGoogleDriveErrorResponse {
   error: String;
 }
 
-interface GoogleDriveSuccessResponse {
+interface IGoogleDriveSuccessResponse {
   fileId: String;
   publicLink: String;
 }
 
-export type GoogleDriveResponse =
-  | GoogleDriveErrorResponse
-  | GoogleDriveSuccessResponse;
+export type IGoogleDriveResponse =
+  | IGoogleDriveErrorResponse
+  | IGoogleDriveSuccessResponse;
