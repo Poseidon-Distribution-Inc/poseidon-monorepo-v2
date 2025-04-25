@@ -1,6 +1,8 @@
 export interface IFileSchema {
-    ownerId: string;
+    userId: string;
     fileId: string;
+    fileName: string;
+    mimeType: string;
     publicLink: string;
     type: "profile" | "company";
 }
