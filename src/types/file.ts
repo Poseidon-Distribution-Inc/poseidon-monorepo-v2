@@ -1,4 +1,4 @@
-interface IFileBase {
+export interface IFileBase {
   fileId: string;
   fileName: string;
   mimeType: string;

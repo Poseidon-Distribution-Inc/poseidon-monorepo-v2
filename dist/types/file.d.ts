@@ -1,4 +1,4 @@
-interface IFileBase {
+export interface IFileBase {
     fileId: string;
     fileName: string;
     mimeType: string;
@@ -16,4 +16,3 @@ export interface IFile extends IFileSchema {
     createdAt: Date;
     updatedAt: Date;
 }
-export {};
