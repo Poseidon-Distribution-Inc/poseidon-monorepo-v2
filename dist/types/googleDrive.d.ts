@@ -5,7 +5,7 @@ interface IGoogleDriveData {
     fileId: string;
     publicLink: string;
 }
-interface IGoogleDriveSuccessResponse {
+export interface IGoogleDriveSuccessResponse {
     message: string;
     data: IGoogleDriveData;
 }
