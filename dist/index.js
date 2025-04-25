@@ -26,3 +26,4 @@ __exportStar(require("./types/shoppingCart"), exports);
 __exportStar(require("./types/subscription"), exports);
 __exportStar(require("./types/quote"), exports);
 __exportStar(require("./types/googleDrive"), exports);
+__exportStar(require("./types/file"), exports);

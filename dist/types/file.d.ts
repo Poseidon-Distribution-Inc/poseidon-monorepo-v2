@@ -1,10 +1,10 @@
-interface IFileSchema {
+export interface IFileSchema {
     ownerId: string;
     fileId: string;
     publicLink: string;
     type: "profile" | "company";
 }
-interface IFile extends IFileSchema {
+export interface IFile extends IFileSchema {
     id: string;
     createdAt: Date;
     updatedAt: Date;
