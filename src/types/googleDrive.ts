@@ -1,14 +1,14 @@
 interface IGoogleDriveErrorResponse {
-  error: String;
+  error: string;
 }
 
 interface IGoogleDriveData {
-  fileId: String;
-  publicLink: String;
+  fileId: string;
+  publicLink: string;
 }
 
-interface IGoogleDriveSuccessResponse {
-  message: String;
+export interface IGoogleDriveSuccessResponse {
+  message: string;
   data: IGoogleDriveData;
 }
 
