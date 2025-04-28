@@ -11,3 +11,4 @@ export * from "./types/subscription";
 export * from "./types/quote";
 export * from "./types/googleDrive";
 export * from "./types/file";
+export * from "./types/bidding";
