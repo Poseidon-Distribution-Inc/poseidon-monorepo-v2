@@ -1,6 +1,8 @@
 export type biddingStatusEnum = "pending" | "accepted" | "rejected" | "cancelled";
 export interface IBiddingSchema {
-    postDetail: string;
+    postDetail: {
+        _id: string;
+    };
     bidderId: string;
     biddingAmount: string;
     status: biddingStatusEnum;

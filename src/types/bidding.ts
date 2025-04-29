@@ -5,7 +5,9 @@ export type biddingStatusEnum =
     | "cancelled";
 import { IPost } from "../types/post";
 export interface IBiddingSchema {
-    postDetail: string;
+    postDetail: {
+        _id: string;
+    };
     bidderId: string;
     biddingAmount: string;
     status: biddingStatusEnum;
