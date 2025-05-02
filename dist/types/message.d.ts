@@ -3,6 +3,7 @@ export interface IMessageSchema {
     authorId: string;
     recipientId: string;
     isActive: boolean;
+    isSeen: boolean;
 }
 export interface IMessage extends IMessageSchema {
     id: string;
