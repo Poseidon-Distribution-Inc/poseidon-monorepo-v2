@@ -1,14 +1,10 @@
-export type biddingStatusEnum =
-    | "pending"
-    | "accepted"
-    | "rejected"
-    | "cancelled";
-import { IPost } from "../types/post";
+export type biddingStatusEnum = "pending" | "accepted" | "rejected" | "cancelled";
 export interface IBiddingSchema {
     postDetail: {
         _id: string;
     };
     bidderId: string;
+    bidderName:string;
     biddingAmount: string;
     status: biddingStatusEnum;
     isActive: boolean;
