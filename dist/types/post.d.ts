@@ -25,6 +25,7 @@ export interface IPost extends IPostSchema {
     status: string;
     biddings?: {
         bidderId: string;
+        bidderName: string;
         biddingAmount: string;
         createdAt: Date;
         postDetail: {
