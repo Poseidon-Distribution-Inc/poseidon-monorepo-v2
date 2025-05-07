@@ -25,7 +25,6 @@ export interface IPost extends IPostSchema {
     status: string;
     biddings?: {
         bidderId: string;
-        bidderName: string;
         biddingAmount: string;
         createdAt: Date;
         postDetail: {
@@ -33,6 +32,8 @@ export interface IPost extends IPostSchema {
         };
         status: string;
     };
+    shipperConfirm: boolean;
+    carrierDelivered: boolean;
 }
 interface APIPostErrorResponse {
     error: string;
