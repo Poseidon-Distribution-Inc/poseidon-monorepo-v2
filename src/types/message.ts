@@ -4,7 +4,6 @@ export interface IMessageSchema {
   recipientId: string;
   isSeen:boolean;
   isActive: boolean;
-  isSeen: boolean;
 }
 
 export interface IMessage extends IMessageSchema {

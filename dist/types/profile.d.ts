@@ -1,9 +1,12 @@
 export interface IProfileSchema {
-    profileName: string;
-    fullname: string;
-    photoUrl: string[];
+    profileName?: String;
+    photoUrl?: string[];
+    fullname?: String;
+    contact?: String;
+    address?: String;
+    about?: String;
     userId: string;
-    isActive: boolean;
+    isActive?: boolean;
 }
 export interface IProfile extends IProfileSchema {
     id: string;
