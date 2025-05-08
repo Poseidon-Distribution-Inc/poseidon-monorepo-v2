@@ -32,6 +32,8 @@ export interface IPost extends IPostSchema {
         };
         status: string;
     };
+    shipperConfirm: boolean;
+    carrierDelivered: boolean;
 }
 interface APIPostErrorResponse {
     error: string;

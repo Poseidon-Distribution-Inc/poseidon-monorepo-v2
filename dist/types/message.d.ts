@@ -2,6 +2,7 @@ export interface IMessageSchema {
     message: string;
     authorId: string;
     recipientId: string;
+    isSeen: boolean;
     isActive: boolean;
     isSeen: boolean;
 }

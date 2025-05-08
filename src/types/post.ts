@@ -23,15 +23,17 @@ export interface IPost extends IPostSchema {
     companyName: string;
     senderContact: string;
     status: string;
-    biddings?:{
-        bidderId:string;
-        biddingAmount:string;
-        createdAt:Date;
-        postDetail:{
-            _id:string
-        },
-        status:string
-    }
+    biddings?: {
+        bidderId: string;
+        biddingAmount: string;
+        createdAt: Date;
+        postDetail: {
+            _id: string;
+        };
+        status: string;
+    };
+    shipperConfirm: boolean;
+    carrierDelivered: boolean;
 }
 interface APIPostErrorResponse {
     error: string;

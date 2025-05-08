@@ -1,7 +1,7 @@
 type AuthProvider = "local" | "google";
 interface IBaseUserSchema {
     id: string;
-    name: string;
+    name?: string;
     email: string;
     address?: string;
     phoneNumber?: string;
