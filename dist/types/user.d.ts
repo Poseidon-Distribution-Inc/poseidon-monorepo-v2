@@ -9,6 +9,7 @@ interface IBaseUserSchema {
     authProvider: AuthProvider;
     createdAt: Date;
     updatedAt: Date;
+    stripeCustomerId?: string;
     isActive: boolean;
 }
 export interface ILocalUserSchema extends IBaseUserSchema {
