@@ -1,7 +1,22 @@
 export interface ISubscriptionSchema {
-    subscriberId: string;
-    postId: string;
+    subscriptionId?: string;
+    customerId?: string;
+    paymentMethodId?: string;
+    description?: string;
+    latestInvoice?: string;
+    quantity?: number;
+    amount?: number;
+    currency?: string;
+    interval?: string;
+    intervalCount?: number;
+    productId?: string;
+    startDate?: Date;
+    status?: string;
+    user?: string;
+    subscriberId?: string;
+    postId?: string;
     isActive: boolean;
+    cancelledAt?: Date;
 }
 export interface ISubscription extends ISubscriptionSchema {
     id: string;

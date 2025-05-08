@@ -1,5 +1,6 @@
 export interface IProfileSchema {
     profileName: string;
+    fullname: string;
     photoUrl: string[];
     userId: string;
     isActive: boolean;
