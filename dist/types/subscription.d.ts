@@ -17,6 +17,7 @@ export interface ISubscriptionSchema {
     postId?: string;
     isActive: boolean;
     cancelledAt?: Date;
+    endDate?: Date;
 }
 export interface ISubscription extends ISubscriptionSchema {
     id: string;

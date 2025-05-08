@@ -20,6 +20,7 @@ export interface ISubscriptionSchema {
     postId?: string;             // Legacy field for compatibility
     isActive: boolean;           // Whether subscription is active
     cancelledAt?: Date;          // When subscription was cancelled
+    endDate?: Date;              // Subscription end date (current period end)
 }
 
 export interface ISubscription extends ISubscriptionSchema {
