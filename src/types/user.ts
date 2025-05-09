@@ -10,8 +10,10 @@ interface IBaseUserSchema {
     createdAt: Date;
     updatedAt: Date;
     stripeCustomerId?: string;
+    subscriptionId?: string;
     subscriptionType?: string;
     subscriptionEndDate?: Date;
+    lastSubscriptionUpdate?: Date;
     isActive: boolean;
 }
 export interface ILocalUserSchema extends IBaseUserSchema {
