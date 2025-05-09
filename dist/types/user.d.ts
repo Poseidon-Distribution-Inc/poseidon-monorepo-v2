@@ -12,6 +12,7 @@ interface IBaseUserSchema {
     stripeCustomerId?: string;
     subscriptionId?: string;
     subscriptionType?: string;
+    subscriptionStatus?: "active" | "cancelled" | "expired" | "none";
     subscriptionEndDate?: Date;
     lastSubscriptionUpdate?: Date;
     isActive: boolean;
