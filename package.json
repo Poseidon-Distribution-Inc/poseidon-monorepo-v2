@@ -5,9 +5,9 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "tsc",
-    "watch": "tsc --project tsconfig.json --watch",
+    "watch": "npx tsc --project tsconfig.json --watch",
     "prepare": "npm run build",
-    "build+": "tsc && git add -A && git commit -m \"build: update dist\" && git push"
+    "build+": "npx tsc && git add -A && git commit -m \"build: update dist\" && git push"
   },
   "keywords": [],
   "author": "",

@@ -1,7 +1,7 @@
 type AuthProvider = "local" | "google";
 interface IBaseUserSchema {
     id: string;
-    name: string;
+    name?: string;
     email: string;
     address?: string;
     phoneNumber?: string;
@@ -9,6 +9,12 @@ interface IBaseUserSchema {
     authProvider: AuthProvider;
     createdAt: Date;
     updatedAt: Date;
+    stripeCustomerId?: string;
+    subscriptionId?: string;
+    subscriptionType?: string;
+    subscriptionStatus?: "active" | "cancelled" | "expired" | "none";
+    subscriptionEndDate?: Date;
+    lastSubscriptionUpdate?: Date;
     isActive: boolean;
 }
 export interface ILocalUserSchema extends IBaseUserSchema {
